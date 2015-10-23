@@ -15,5 +15,9 @@ class Numero_Fraccionario
   end
   def mcm(valor1, valor2)
     (valor1/mcd(valor1,valor2))*valor2
+  end  
+  def + (other)
+	aux = mcm(@denominador, other.denominador)
+    Numero_Fraccionario.new((aux/@denominador)*@numerador+((aux/other.denominador)*other.numerador), aux)
   end
 end
