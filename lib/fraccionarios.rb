@@ -27,4 +27,7 @@ class Numero_Fraccionario
   def * (other)
     Numero_Fraccionario.new((@numerador * other.numerador),(@denominador * other.denominador))
   end
+  def / (other)
+    Numero_Fraccionario.new((@numerador * other.denominador),(@denominador * other.numerador))
+  end
 end
