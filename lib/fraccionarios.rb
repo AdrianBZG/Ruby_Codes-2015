@@ -4,6 +4,6 @@ class Numero_Fraccionario
     @numerador, @denominador = numerador, denominador
   end
   def to_s
-    "(#{@x}/#{@y})"
+    "#{@x}/#{@y}"
   end
 end
