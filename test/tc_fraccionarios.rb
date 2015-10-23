@@ -8,7 +8,7 @@ class TestPoint < Test::Unit::TestCase
   end
   def test_tos
     assert_equal("10/5", @numero_fraccionario_1.to_s)
-	assert_equal("20/10", @numero_fraccionario_2.to_s)
+    assert_equal("20/10", @numero_fraccionario_2.to_s)
   end
   def test_mcd
     assert_equal(5, @numero_fraccionario_1.mcd(10,5))
