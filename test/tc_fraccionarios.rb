@@ -31,9 +31,15 @@ class TestPoint < Test::Unit::TestCase
     assert_equal("100/100", (@numero_fraccionario_1 / @numero_fraccionario_2).to_s)
   end
   def test_simplificar
-	@numero_fraccionario_1.simplificar
-	@numero_fraccionario_2.simplificar
-    assert_equal("2/1", @numero_fraccionario_1.to_s)
-	assert_equal("2/1", @numero_fraccionario_2.to_s)
+    assert_equal("2/1", @numero_fraccionario_1.simplificar.to_s)
+	assert_equal("2/1", @numero_fraccionario_2.simplificar.to_s)
+  end
+  def test_comparaciones
+	num1_simplificado = @numero_fraccionario_1.simplificar
+	num2_simplificado = @numero_fraccionario_2.simplificar
+    assert_equal(true, num1_simplicado.igual_que(num2_simplificado))
+	assert_equal(false, num1_simplicado.distinto_que(num2_simplificado))
+	assert_equal(false, num1_simplicado.menor_que(num2_simplificado))
+	assert_equal(false, num1_simplicado.mayor_que(num2_simplificado))
   end
 end

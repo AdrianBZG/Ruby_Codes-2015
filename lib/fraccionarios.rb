@@ -32,7 +32,34 @@ class Numero_Fraccionario
   end
   def simplificar
     aux = mcd(@numerador,@denominador)
-	@numerador = @numerador/aux
-	@denominador = @denominador/aux
+	Numero_Fraccionario.new(@numerador/aux, @denominador/aux)
+  end
+  def igual_que (other)
+    if @denominador == other.denominador and @numerador == other.numerador
+		true
+	else
+		false
+	end
+  end
+  def distinto_que (other)
+    if @denominador == other.denominador and @numerador == other.numerador
+		false
+	else
+		true
+	end
+  end
+  def menor_que (other)
+    if @denominador > other.denominador || (@denominador == other.denominador and @numerador < other.numerador)
+		true
+	else
+		false
+	end
+  end
+  def mayor_que (other)
+    if @denominador > other.denominador || (@denominador == other.denominador and @numerador < other.numerador)
+		false
+	else
+		true
+	end
   end
 end
