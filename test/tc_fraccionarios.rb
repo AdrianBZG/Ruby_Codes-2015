@@ -24,4 +24,7 @@ class TestPoint < Test::Unit::TestCase
   def test_resta
     assert_equal("450/100", (Point.new(50,10) - Point.new(5,10)).to_s)
   end
+  def test_multiplicacion
+    assert_equal("200/50", (@numero_fraccionario_1 * @numero_fraccionario_2).to_s)
+  end
 end
