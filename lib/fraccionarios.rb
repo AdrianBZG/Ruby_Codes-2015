@@ -18,6 +18,10 @@ class Numero_Fraccionario
   end  
   def + (other)
 	aux = mcm(@denominador, other.denominador)
-    Numero_Fraccionario.new((aux/@denominador)*@numerador+((aux/other.denominador)*other.numerador), aux)
+    Numero_Fraccionario.new(((aux/@denominador)*@numerador)+((aux/other.denominador)*other.numerador), aux)
+  end
+  def - (other)
+	aux = mcm(@denominador, other.denominador)
+    Numero_Fraccionario.new(((aux/other.denominador)*other.numerador)-((aux/@denominador)*@numerador), aux)
   end
 end
