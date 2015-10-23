@@ -30,4 +30,9 @@ class Numero_Fraccionario
   def / (other)
     Numero_Fraccionario.new((@numerador * other.denominador),(@denominador * other.numerador))
   end
+  def simplificar
+    aux = mcd(@numerador,@denominador)
+	@numerador = @numerador/aux
+	@denominador = @denominador/aux
+  end
 end

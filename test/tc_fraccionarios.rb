@@ -30,4 +30,10 @@ class TestPoint < Test::Unit::TestCase
   def test_division
     assert_equal("100/100", (@numero_fraccionario_1 / @numero_fraccionario_2).to_s)
   end
+  def test_simplificar
+	@numero_fraccionario_1.simplificar
+	@numero_fraccionario_2.simplificar
+    assert_equal("2/1", @numero_fraccionario_1.to_s)
+	assert_equal("2/1", @numero_fraccionario_2.to_s)
+  end
 end
