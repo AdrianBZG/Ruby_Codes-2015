@@ -1,7 +1,7 @@
 require 'lib/fraccionarios'
 require 'test/unit'
 
-class TestPoint < Test::Unit::TestCase
+class TestFraccionario < Test::Unit::TestCase
   def setup
   	@numero_fraccionario_1 = Point.new(10,5)
   	@numero_fraccionario_2 = Point.new(20,10)
