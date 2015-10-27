@@ -81,9 +81,9 @@ class Numero_Fraccionario
 	end
   end
   def -@
-    Numero_Fraccionario.new(@numerador*-1,@denominador)
+    	Numero_Fraccionario.new(@numerador*-1,@denominador)
   end
   def *(value)
-    Numero_Fraccionario.new(@numerador*value.to_i,@denominador)  
+    	Numero_Fraccionario.new(@numerador*value.to_i,@denominador)  
   end
 end
