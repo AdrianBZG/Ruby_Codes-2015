@@ -49,3 +49,13 @@ desc "Ejecutar la prueba de las comparaciones basicas"
 task :comparaciones do
   sh "ruby -I. test/tc_fraccionarios.rb -n /comparaciones/"
 end
+
+desc "Ejecutar la prueba de la negacion"
+task :negacion do
+  sh "ruby -I. test/tc_fraccionarios.rb -n /negacion/"
+end
+
+desc "Ejecutar la prueba de multiplicar por un valor"
+task :multiplicacionporvalor do
+  sh "ruby -I. test/tc_fraccionarios.rb -n /multiplicacionporvalor/"
+end

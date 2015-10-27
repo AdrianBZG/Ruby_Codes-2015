@@ -11,7 +11,7 @@ class Numero_Fraccionario
   end
   def to_s
   	#Mostrar numerador y denominador
-  	"#{@x}/#{@y}"
+  	"#{@numerador}/#{@denominador}"
   end
   def mcd(valor1, valor2)
   	#Maximo comun divisor
@@ -74,10 +74,16 @@ class Numero_Fraccionario
   end
   def mayor_que (other)
   	#Comparador de mayor que entre dos objetos de tipo numero fraccionario
-  	if @denominador > other.denominador || (@denominador == other.denominador and @numerador < other.numerador)
-		false
-	else
+	if !menor_que(other) and !igual_que(other)
 		true
+	else
+		false
 	end
+  end
+  def -@
+    Numero_Fraccionario.new(@numerador*-1,@denominador)
+  end
+  def *(value)
+    Numero_Fraccionario.new(@numerador*value.to_i,@denominador)  
   end
 end
