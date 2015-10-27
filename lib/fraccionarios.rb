@@ -13,6 +13,10 @@ class Numero_Fraccionario
   	#Mostrar numerador y denominador
   	"#{@numerador}/#{@denominador}"
   end
+  def to_f
+  	#Dividir numerador entre denominador para mostrar como flotante
+  	@numerador/@denominador
+  end
   def mcd(valor1, valor2)
   	#Maximo comun divisor
   	if valor1 == 0
