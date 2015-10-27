@@ -64,3 +64,8 @@ desc "Ejecutar la prueba del to_f"
 task :tof do
   sh "ruby -I. test/tc_fraccionarios.rb -n /tof/"
 end
+
+desc "Ejecutar la prueba del reciproco"
+task :reciproco do
+  sh "ruby -I. test/tc_fraccionarios.rb -n /reciproco/"
+end
