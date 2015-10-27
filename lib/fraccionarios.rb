@@ -13,6 +13,10 @@ class Numero_Fraccionario
   	#Mostrar numerador y denominador
   	"#{@numerador}/#{@denominador}"
   end
+  def reciproco
+  	#Reciproco
+  	Numero_Fraccionario.new(@denominador,@numerador)
+  end
   def to_f
   	#Dividir numerador entre denominador para mostrar como flotante
   	@numerador/@denominador
