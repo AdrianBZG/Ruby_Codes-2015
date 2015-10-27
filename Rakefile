@@ -59,3 +59,8 @@ desc "Ejecutar la prueba de multiplicar por un valor"
 task :multiplicacionporvalor do
   sh "ruby -I. test/tc_fraccionarios.rb -n /multiplicacionporvalor/"
 end
+
+desc "Ejecutar la prueba del to_f"
+task :tof do
+  sh "ruby -I. test/tc_fraccionarios.rb -n /tof/"
+end
