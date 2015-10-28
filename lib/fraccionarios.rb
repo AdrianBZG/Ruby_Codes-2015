@@ -7,6 +7,12 @@ class Numero_Fraccionario
   def initialize(numerador, denominador)
   	# Constructor: Los fraccionarios no se simplifican en su inicialización, se debe hacer intencionadamente
   	# con el método 'simplificar'
+  	if(numerador.is_a? String)
+  	  raise 'Tipo invalido'
+  	else if(denominador.is_a? String)
+  	  raise 'Tipo invalido'
+  	end
+  	end
   	@numerador, @denominador = numerador, denominador
   end
   def to_s
@@ -90,8 +96,5 @@ class Numero_Fraccionario
   end
   def -@
     	Numero_Fraccionario.new(@numerador*-1,@denominador)
-  end
-  def *(value)
-    	Numero_Fraccionario.new(@numerador*value.to_i,@denominador)  
   end
 end
