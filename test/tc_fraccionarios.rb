@@ -39,10 +39,9 @@ class TestFraccionario < Test::Unit::TestCase
     	num1_simplificado = -num1_simplificado
   	assert_equal("-2/1", num1_simplificado.to_s)
   end
-  def test_multiplicacionporvalor
-    	num1_simplificado = @numero_fraccionario_1.simplificar
-    	num1_simplificado = num1_simplificado*5
-  	assert_equal("10/1", num1_simplificado.to_s)
+  def test_type_check
+    	assert_raise(RuntimeError) {Numero_Fraccionario.new(1,'hola')}
+    	assert_raise(RuntimeError) {Numero_Fraccionario.new('adios',1)}
   end
   def test_comparaciones
   	num1_simplificado = @numero_fraccionario_1.simplificar
