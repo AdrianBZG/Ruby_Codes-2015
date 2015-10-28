@@ -52,10 +52,11 @@ class TestFraccionario < Test::Unit::TestCase
 	assert_equal(false, num1_simplificado.mayor_que(num2_simplificado))
   end
   def test_tof
-  	assert_equal("2", @numero_fraccionario_1.to_f)
+  	assert_equal(2, @numero_fraccionario_1.to_f)
   end
   def test_reciproco
   	num1_simplificado = @numero_fraccionario_1.simplificar
+  	num1_simplificado = num1_simplificado.reciproco
   	assert_equal("1/2", num1_simplificado.to_s)
   end
 end
