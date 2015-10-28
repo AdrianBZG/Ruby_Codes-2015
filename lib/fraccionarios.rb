@@ -11,6 +11,9 @@ class Numero_Fraccionario
   	  raise 'Tipo invalido'
   	else if(denominador.is_a? String)
   	  raise 'Tipo invalido'
+  	else if(denominador == 0)
+  	  raise 'Denominador con valor nulo'
+  	end
   	end
   	end
   	@numerador, @denominador = numerador, denominador
