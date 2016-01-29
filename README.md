@@ -1,7 +1,7 @@
 # Languages & Paradigms of Programming #
-** Subject Assessments
-** Programming Language: Ruby
-** Codes from year 2015
+** Subject Assessments<br>
+** Programming Language: Ruby<br>
+** Codes from year 2015<br>
 
 # License #
 
