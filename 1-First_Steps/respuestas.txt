@@ -1,0 +1,8 @@
+1. ¿Qué es RVM (Ruby Version Manager)?:
+- Ruby Version Manager, también abreviado RVM, es una plataforma software diseñada para gestionar diferentes instalaciones de Ruby en el mismo dispositivo.
+
+2. Diferencias entre ejecutar con el intérprete de Ruby y el intérprete interactivo:
+- Mediante el intérprete interactivo podemos ver que devuelve el programa, en este caso devuelve el objeto 'nil', es decir el objeto vacío. Si e
+
+3. Diferencias entre usar intérprete interactivo y usar PRY:
+- Usando PRY no sólo obtenemos una interpretación interactiva, además podemos ejecutar sentencias en tiempo de ejecución y ver como afectan al programa.

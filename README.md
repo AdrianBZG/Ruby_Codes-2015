@@ -1,4 +1,8 @@
-# Lenguajes y Paradigmas de la Programación</br>
-Práctica de laboratorio 5: Pruebas Unitarias</br>
-</br>
-Autor: Adrián Rodríguez Bazaga</br>
+# Languages & Paradigms of Programming #
+** Subject Assessments
+** Programming Language: Ruby
+** Codes from year 2015
+
+# License #
+
+Available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

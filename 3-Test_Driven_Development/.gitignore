@@ -1,0 +1,29 @@
+#Genéricos
+/Gemfile.lock
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/test/tmp/
+/test/version_tmp/
+/tmp/
+/spec/reports/
+
+## Específico de RubyMotion:
+.dat*
+.repl_history
+build/
+
+## Caché de la documentación y ficheros generados:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Normalización del entorno:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
